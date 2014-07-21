@@ -1,0 +1,30 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Google Maps JavaScript API Example</title>
+<!--导入Google Maps API库文件。注意将本代码中的API Key替换为前文申请到的API Key-->
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA1j86tnUDFv8OAtC8dZVtKRT8YXSkg32FmSueYimfV_yj5DJguRRW5eQHwEBk10jwkDxLKNltT_kuQA" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+    var map;
+    //添加GControl()控件
+    function load() {
+      if (GBrowserIsCompatible()) {  
+        map = new GMap2(document.getElementById("map"));//地图
+       // map = new GMap2(document.getElementById("map"), {mapTypes: [G_HYBRID_MAP]});//卫星地图+地图
+        map.addControl(new GLargeMapControl());
+        map.addControl(new GMapTypeControl());//卫星地图+地图 模式下无法显示
+        map.addControl(new GScaleControl()); //a map scale
+      	map.setCenter(new GLatLng(34.249611,108.985729), 3);
+      }
+    }
+    //]]>
+    </script>
+  </head>
+  <!--加载时调用load()函数加载地图，注意加上onunload="GUnload()"防止内存泄露-->
+  <body onload="load()" onunload="GUnload()">
+    <!--以下id为map的DIV元素即为Google地图的容器-->
+    <div id="map" style="width: 800px; height: 600px"></div>
+  </body>
+</html>

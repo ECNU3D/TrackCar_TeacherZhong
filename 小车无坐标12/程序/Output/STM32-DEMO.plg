@@ -1,0 +1,303 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\毕业设计\代码初稿3\小车无坐标11\程序\USER\STM32-DEMO.uvproj
+Project File Date:  05/21/2014
+
+<h2>Output:</h2>
+Build target 'USART1-DEMO'
+compiling main.c...
+usart2.h(50): warning:  #1-D: last line of file ends without a newline
+usart2.h:   #endif /* __USART2_H */
+usart2.h:                          ^
+uart4.h(50): warning:  #1-D: last line of file ends without a newline
+uart4.h:   #endif /* __UART4_H */
+uart4.h:                         ^
+..\USER\resolve.h(20): warning:  #1295-D: Deprecated declaration order_sendinit - give arg types
+..\USER\resolve.h:   void order_sendinit();
+..\USER\resolve.h:        ^
+main.c(176): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+main.c:                 sprintf(package4,"%4.1f",temp);
+main.c:                         ^
+main.c(273): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         if(strstr(sUart4_entity.u8RX_Buffer,order3)!=NULL)
+main.c:                                                   ^
+main.c(273): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         if(strstr(sUart4_entity.u8RX_Buffer,order3)!=NULL)
+main.c:                                                                             ^
+main.c(284): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,order4)!=NULL)
+main.c:                                                        ^
+main.c(284): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,order4)!=NULL)
+main.c:                                                                                  ^
+main.c(295): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,order5)!=NULL)
+main.c:                                                        ^
+main.c(295): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,order5)!=NULL)
+main.c:                                                                                  ^
+main.c(308): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,stop)!=NULL)
+main.c:                                                        ^
+main.c(308): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,stop)!=NULL)
+main.c:                                                                                  ^
+main.c(321): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,right)!=NULL)
+main.c:                                                        ^
+main.c(321): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,right)!=NULL)
+main.c:                                                                                  ^
+main.c(338): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,left)!=NULL)
+main.c:                                                        ^
+main.c(338): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,left)!=NULL)
+main.c:                                                                                  ^
+main.c(367): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,orgright)!=NULL)
+main.c:                                                        ^
+main.c(367): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,orgright)!=NULL)
+main.c:                                                                                  ^
+main.c(380): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,orgleft)!=NULL)
+main.c:                                                        ^
+main.c(380): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,orgleft)!=NULL)
+main.c:                                                                                  ^
+main.c(392): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,back)!=NULL)
+main.c:                                                        ^
+main.c(392): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if(strstr(sUart4_entity.u8RX_Buffer,back)!=NULL)
+main.c:                                                                                  ^
+main.c(404): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if((strstr(sUart4_entity.u8RX_Buffer,stop)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,order5)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,left)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,right)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,back)==NULL))
+main.c:                                                         ^
+main.c(404): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if((strstr(sUart4_entity.u8RX_Buffer,stop)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,order5)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,left)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,right)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,back)==NULL))
+main.c:                                                                                   ^
+main.c(404): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if((strstr(sUart4_entity.u8RX_Buffer,stop)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,order5)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,left)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,right)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,back)==NULL))
+main.c:                                                                                                         ^
+main.c(404): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if((strstr(sUart4_entity.u8RX_Buffer,stop)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,order5)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,left)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,right)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,back)==NULL))
+main.c:                                                                                                                                   ^
+main.c(404): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if((strstr(sUart4_entity.u8RX_Buffer,stop)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,order5)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,left)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,right)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,back)==NULL))
+main.c:                                                                                                                                                           ^
+main.c(404): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if((strstr(sUart4_entity.u8RX_Buffer,stop)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,order5)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,left)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,right)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,back)==NULL))
+main.c:                                                                                                                                                                                     ^
+main.c(404): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if((strstr(sUart4_entity.u8RX_Buffer,stop)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,order5)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,left)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,right)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,back)==NULL))
+main.c:                                                                                                                                                                                                           ^
+main.c(404): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if((strstr(sUart4_entity.u8RX_Buffer,stop)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,order5)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,left)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,right)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,back)==NULL))
+main.c:                                                                                                                                                                                                                                     ^
+main.c(404): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         else if((strstr(sUart4_entity.u8RX_Buffer,stop)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,order5)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,left)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,right)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,back)==NULL))
+main.c:                                                                                                                                                                                                                                                            ^
+main.c(404): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         else if((strstr(sUart4_entity.u8RX_Buffer,stop)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,order5)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,left)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,right)==NULL)&&(strstr(sUart4_entity.u8RX_Buffer,back)==NULL))
+main.c:                                                                                                                                                                                                                                                                                      ^
+main.c(424): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                         if(strstr(sUart4_entity.u8RX_Buffer,remote)!=NULL)
+main.c:                                                   ^
+main.c(424): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+main.c:                                         if(strstr(sUart4_entity.u8RX_Buffer,remote)!=NULL)
+main.c:                                                                             ^
+main.c(429): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                                 if((strchr(sUart4_entity.u8RX_Buffer,'B')!=NULL)&&(strchr(sUart4_entity.u8RX_Buffer,'P')!=NULL))
+main.c:                                                            ^
+main.c(429): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                                 if((strchr(sUart4_entity.u8RX_Buffer,'B')!=NULL)&&(strchr(sUart4_entity.u8RX_Buffer,'P')!=NULL))
+main.c:                                                                                                           ^
+main.c(435): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+main.c:                                                         memcpy(pathrecord,sUart4_entity.u8RX_Buffer,strlen(sUart4_entity.u8RX_Buffer));
+main.c:                                                                                                            ^
+main.c(86): warning:  #550-D: variable "u32RxLen" was set but never used
+main.c:         uint32_t i, u32RxLen;
+main.c:                     ^
+main.c(95): warning:  #177-D: variable "x1" was declared but never referenced
+main.c:         double x1,y1,x2,y2,fai;
+main.c:                ^
+main.c(95): warning:  #177-D: variable "y1" was declared but never referenced
+main.c:         double x1,y1,x2,y2,fai;
+main.c:                   ^
+main.c(95): warning:  #177-D: variable "x2" was declared but never referenced
+main.c:         double x1,y1,x2,y2,fai;
+main.c:                      ^
+main.c(95): warning:  #177-D: variable "y2" was declared but never referenced
+main.c:         double x1,y1,x2,y2,fai;
+main.c:                         ^
+main.c(95): warning:  #177-D: variable "fai" was declared but never referenced
+main.c:         double x1,y1,x2,y2,fai;
+main.c:                            ^
+main.c(98): warning:  #550-D: variable "at" was set but never used
+main.c:         const u8 at[] = {"receiveok"};
+main.c:                  ^
+main.c(99): warning:  #177-D: variable "reply" was declared but never referenced
+main.c:         u8 reply[6]={0x01,0x04,0x01};
+main.c:            ^
+main.c(104): warning:  #177-D: variable "gpgga" was declared but never referenced
+main.c:         u8 gpgga[]={"$GPGGA,061021.05,3102.02726033,N,12126.86794498,E,2,12,0.9,25.022,M,8.127,M,1.0,0000*46\r\n"};
+main.c:            ^
+main.c(105): warning:  #177-D: variable "sendbuff" was declared but never referenced
+main.c:     uint8_t sendbuff[]="receiveok";
+main.c:             ^
+main.c(528): warning:  #1-D: last line of file ends without a newline
+main.c:   }
+main.c:    ^
+main.c: main.c: 48 warnings, 0 errors
+compiling stm32f10x_it.c...
+uart4.h(50): warning:  #1-D: last line of file ends without a newline
+uart4.h:   #endif /* __UART4_H */
+uart4.h:                         ^
+stm32f10x_it.c(146): warning:  #177-D: variable "i" was declared but never referenced
+stm32f10x_it.c:         u8 i;
+stm32f10x_it.c:            ^
+stm32f10x_it.c: stm32f10x_it.c: 2 warnings, 0 errors
+compiling polygon.c...
+polygon.c(64): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+polygon.c:      sprintf(package1,"%10.6lf",latitude2);
+polygon.c:              ^
+polygon.c(65): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+polygon.c:      sprintf(package2,"%10.6lf",longitude2);
+polygon.c:              ^
+polygon.c(123): warning:  #550-D: variable "e1" was set but never used
+polygon.c:     double a, e2,e1, A , Bc, C, D, N , x, dl, n, t, n2, pi,xval,yval;
+polygon.c:                  ^
+polygon.c(123): warning:  #177-D: variable "n2" was declared but never referenced
+polygon.c:     double a, e2,e1, A , Bc, C, D, N , x, dl, n, t, n2, pi,xval,yval;
+polygon.c:                                                     ^
+polygon.c(125): warning:  #177-D: variable "N1" was declared but never referenced
+polygon.c:     double N1, M1, n1, t1, BB, B0, B1, B2, B4, B6, r;
+polygon.c:            ^
+polygon.c(125): warning:  #177-D: variable "M1" was declared but never referenced
+polygon.c:     double N1, M1, n1, t1, BB, B0, B1, B2, B4, B6, r;
+polygon.c:                ^
+polygon.c(125): warning:  #177-D: variable "n1" was declared but never referenced
+polygon.c:     double N1, M1, n1, t1, BB, B0, B1, B2, B4, B6, r;
+polygon.c:                    ^
+polygon.c(125): warning:  #177-D: variable "t1" was declared but never referenced
+polygon.c:     double N1, M1, n1, t1, BB, B0, B1, B2, B4, B6, r;
+polygon.c:                        ^
+polygon.c(125): warning:  #177-D: variable "BB" was declared but never referenced
+polygon.c:     double N1, M1, n1, t1, BB, B0, B1, B2, B4, B6, r;
+polygon.c:                            ^
+polygon.c(125): warning:  #177-D: variable "B0" was declared but never referenced
+polygon.c:     double N1, M1, n1, t1, BB, B0, B1, B2, B4, B6, r;
+polygon.c:                                ^
+polygon.c(125): warning:  #177-D: variable "B1" was declared but never referenced
+polygon.c:     double N1, M1, n1, t1, BB, B0, B1, B2, B4, B6, r;
+polygon.c:                                    ^
+polygon.c(125): warning:  #177-D: variable "B2" was declared but never referenced
+polygon.c:     double N1, M1, n1, t1, BB, B0, B1, B2, B4, B6, r;
+polygon.c:                                        ^
+polygon.c(125): warning:  #177-D: variable "B4" was declared but never referenced
+polygon.c:     double N1, M1, n1, t1, BB, B0, B1, B2, B4, B6, r;
+polygon.c:                                            ^
+polygon.c(125): warning:  #177-D: variable "B6" was declared but never referenced
+polygon.c:     double N1, M1, n1, t1, BB, B0, B1, B2, B4, B6, r;
+polygon.c:                                                ^
+polygon.c(125): warning:  #177-D: variable "r" was declared but never referenced
+polygon.c:     double N1, M1, n1, t1, BB, B0, B1, B2, B4, B6, r;
+polygon.c:                                                    ^
+polygon.c(179): warning:  #177-D: variable "k" was declared but never referenced
+polygon.c:      double dy,dx,pi,k,b;
+polygon.c:                      ^
+polygon.c(179): warning:  #177-D: variable "b" was declared but never referenced
+polygon.c:      double dy,dx,pi,k,b;
+polygon.c:                        ^
+polygon.c(217): warning:  #550-D: variable "leftok" was set but never used
+polygon.c:      u8 leftok,rightok;
+polygon.c:         ^
+polygon.c(217): warning:  #550-D: variable "rightok" was set but never used
+polygon.c:      u8 leftok,rightok;
+polygon.c:                ^
+polygon.c: polygon.c: 19 warnings, 0 errors
+compiling resolve.c...
+resolve.h(20): warning:  #1295-D: Deprecated declaration order_sendinit - give arg types
+resolve.h:   void order_sendinit();
+resolve.h:        ^
+usart2.h(50): warning:  #1-D: last line of file ends without a newline
+usart2.h:   #endif /* __USART2_H */
+usart2.h:                          ^
+resolve.c(67): warning:  #550-D: variable "u32RxLen" was set but never used
+resolve.c:      uint32_t u32RxLen;
+resolve.c:               ^
+resolve.c(198): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+resolve.c:      sprintf(package3,"%10.6lf",heading);
+resolve.c:              ^
+resolve.c(137): warning:  #177-D: variable "din" was declared but never referenced
+resolve.c:      u8 din[12];
+resolve.c:         ^
+resolve.c(291): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+resolve.c:      sprintf(package4,"%10.6lf",roll);
+resolve.c:              ^
+resolve.c(234): warning:  #177-D: variable "din" was declared but never referenced
+resolve.c:      u8 din[12];
+resolve.c:         ^
+resolve.c(386): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+resolve.c:      sprintf(package5,"%10.6lf",pitch);
+resolve.c:              ^
+resolve.c(328): warning:  #177-D: variable "din" was declared but never referenced
+resolve.c:      u8 din[12];
+resolve.c:         ^
+resolve.c(447): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+resolve.c:                                      sprintf(package6,"%4.1lf",speed);
+resolve.c:                                              ^
+resolve.c(483): warning:  #223-D: function "find_str" declared implicitly
+resolve.c:      indexb=find_str(pathrecord,"B");
+resolve.c:             ^
+resolve.c(464): warning:  #177-D: variable "path" was declared but never referenced
+resolve.c:      u8 *path=pathrecord;
+resolve.c:          ^
+resolve.c(590): warning:  #260-D: explicit type is missing ("int" assumed)
+resolve.c:      static gausscount=0;
+resolve.c:             ^
+resolve.c(588): warning:  #177-D: variable "jp1" was declared but never referenced
+resolve.c:      u16 jp1,pathlen1;
+resolve.c:          ^
+resolve.c(588): warning:  #177-D: variable "pathlen1" was declared but never referenced
+resolve.c:      u16 jp1,pathlen1;
+resolve.c:              ^
+resolve.c(879): warning:  #177-D: variable "index" was declared but never referenced
+resolve.c:      u8 i,j,k,index,gpsstate;
+resolve.c:               ^
+resolve.c(880): warning:  #177-D: variable "index5" was declared but never referenced
+resolve.c:      u8 index2,index4,index5;
+resolve.c:                       ^
+resolve.c(882): warning:  #177-D: variable "x2" was declared but never referenced
+resolve.c:      double *x2,*y2;
+resolve.c:              ^
+resolve.c(882): warning:  #177-D: variable "y2" was declared but never referenced
+resolve.c:      double *x2,*y2;
+resolve.c:                  ^
+resolve.c: resolve.c: 19 warnings, 0 errors
+compiling protocol.c...
+usart2.h(50): warning:  #1-D: last line of file ends without a newline
+usart2.h:   #endif /* __USART2_H */
+usart2.h:                          ^
+protocol.c(256): warning:  #177-D: variable "u32I" was declared but never referenced
+protocol.c:     uint32_t u32I, u32DataIndex = 0, u32Len;
+protocol.c:              ^
+protocol.c(470): warning:  #1441-D: nonstandard cast on lvalue
+protocol.c:     (uint8_t *)apppoint->pData=u8AppSendData;//实际要传输的数据
+protocol.c:     ^
+protocol.c: protocol.c: 3 warnings, 0 errors
+compiling variables.c...
+compiling adc.c...
+..\USER\resolve.h(20): warning:  #1295-D: Deprecated declaration order_sendinit - give arg types
+..\USER\resolve.h:   void order_sendinit();
+..\USER\resolve.h:        ^
+..\USER\resolve.h: ..\HARDWARE\ADC\adc.c: 1 warning, 0 errors
+linking...
+..\Output\STM32-DEMO.axf: error: L6050U: The code size of this image (34640 bytes) exceeds the maximum allowed for this version of the linker.
+..\Output\STM32-DEMO.axf: Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
+Target not created

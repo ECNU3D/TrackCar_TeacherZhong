@@ -3,6 +3,13 @@
 *.lo
 *.o
 *.obj
+*.__i
+*.crf
+*.d
+*.htm
+*.lnp
+*.sct
+*.Bak
 
 # Compiled Dynamic libraries
 *.so

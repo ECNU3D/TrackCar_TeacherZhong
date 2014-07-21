@@ -1,0 +1,163 @@
+﻿    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Google Maps JavaScript API Example</title>
+<!--导入Google Maps API库文件。注意将本代码中的API Key替换为前文申请到的API Key-->
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA1j86tnUDFv8OAtC8dZVtKRT8YXSkg32FmSueYimfV_yj5DJguRRW5eQHwEBk10jwkDxLKNltT_kuQA" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+    var map;
+    var latitude;
+    var longtitude;
+    var i=0; 
+    var fso, tf,tf1,fread,tf2;
+    var dislat,dislnt;
+
+
+    //添加GControl()控件
+    function load() {
+      if (GBrowserIsCompatible()) {  
+        map = new GMap2(document.getElementById("map_canvas"));//地图
+       // map = new GMap2(document.getElementById("map"), {mapTypes: [G_HYBRID_MAP]});//卫星地图+地图
+        map.addControl(new GLargeMapControl());
+        map.addControl(new GMapTypeControl());//卫星地图+地图 模式下无法显示
+        map.addControl(new GScaleControl()); //a map scale
+
+
+      	map.setCenter(new GLatLng(31.0337,121.4477), 20);
+
+
+
+	//创建一个自定义的GIcon  
+	myIcon= new GIcon();  
+	//前景图片  
+	//myIcon.image = "http://labs.google.com/ridefinder/images/mm_20_green.png";
+	myIcon.image ="d:\\lbjn.png";    
+	//阴影图片  
+	myIcon.shadow = "http://labs.google.com/ridefinder/images/mm_20_shadow.png";  
+	//前景图片大小，长x宽  
+	myIcon.iconSize = new GSize(20, 12);  
+	//阴影图片大小，长x宽  
+	myIcon.shadowSize = new GSize(22, 20);  
+ 
+	//以下两个属性很难解释，读者可自行调整其数值以便理解其意义  
+ 
+	// myIcon锚定点相对于myIcon图片左上角的像素距离  
+	myIcon.iconAnchor = new GPoint(6, 20);
+
+	myIcon.infoWindowAnchor = new GPoint(5, 1);
+
+
+
+	//创建一个自定义的GIcon  
+	myIcon1= new GIcon();  
+	//前景图片  
+	//myIcon.image = "http://labs.google.com/ridefinder/images/mm_20_green.png";
+	myIcon1.image ="d:\\138.png";    
+	//阴影图片  
+	myIcon1.shadow = "http://labs.google.com/ridefinder/images/mm_20_shadow.png";  
+	//前景图片大小，长x宽  
+	myIcon1.iconSize = new GSize(20, 12);  
+	//阴影图片大小，长x宽  
+	myIcon1.shadowSize = new GSize(22, 20);  
+ 
+	//以下两个属性很难解释，读者可自行调整其数值以便理解其意义  
+ 
+	// myIcon锚定点相对于myIcon图片左上角的像素距离  
+	myIcon1.iconAnchor = new GPoint(6, 20);
+
+	myIcon1.infoWindowAnchor = new GPoint(5, 1);
+
+
+
+	//var marker1 = new GMarker(new GLatLng(31,120),  
+        //                {icon: myIcon});      
+	// 自定义GMarkerOptions的icon属性
+
+	//map.addOverlay(marker1);
+
+	//GEvent.addListener(map, "click", function() 
+	//{
+  	//	alert("您点击了地图。");
+	//});
+
+
+	map.openInfoWindow(map.getCenter(),document.createTextNode("this is the center of map")); 
+	
+	//鼠标移动时显示该点坐标,调试通过
+	//GEvent.addListener(map,"mousemove", function(mEvent) 
+	//{
+	//	var myHtml = "GPoint 为： " + mEvent.lat() +","+mEvent.lng()+"，<br>缩放级别为：" + map.getZoom();
+        //     // fromContainerPixelToLatLng(pixel)
+        //      map.openInfoWindow(mEvent, myHtml);
+
+	//});	
+	
+		GEvent.addListener(map,"click", function(overlay,latlng) 
+		{
+		    
+              		//var myHtml = "GPoint 为： " + map.fromLatLngToDivPixel(latlng) + "，<br>缩放级别为：" + map.getZoom();
+              		var myHtml = "GPoint 为： " + latlng.lat() +","+latlng.lng()+"，<br>缩放级别为：" + map.getZoom();
+             		// fromContainerPixelToLatLng(pixel)
+              		map.openInfoWindow(latlng, myHtml);
+	      		i++;
+			if(i>1)
+			{
+				var polyline=
+ 				new GPolyline([new GLatLng(latlng.lat(),latlng.lng()), new GLatLng(latitude,longitude) ], "#ff0000", 3);  
+				map.addOverlay(polyline);
+			}
+			latitude=latlng.lat();
+			longitude=latlng.lng();
+	      		//document.getElementById("txtLat").value=latlng.lat();//纬度
+              		//document.getElementById("txtLng").value=latlng.lng();//经度
+
+			var marker1 = new GMarker(new GLatLng(latlng.lat(),latlng.lng()),  
+        	                {icon: myIcon}); 
+			
+	   		map.addOverlay(marker1);			
+
+		
+			fso = new ActiveXObject("Scripting.FileSystemObject");//write
+
+			fread=new ActiveXObject("Scripting.FileSystemObject");//readonly
+
+			tf2=fread.OpenTextFile("d:\\gpscoord.txt",1);//readonly
+
+			dislat=tf2.ReadLine();
+			tf2.SkipLine();
+			dislnt=tf2.ReadLine();
+
+			//map.setCenter(new GLatLng(dislat,dislnt), 20);
+			var marker2=new GMarker(new GLatLng(dislat,dislnt),{icon:myIcon1});
+			map.addOverlay(marker2);
+			tf2.close();
+
+			tf1= fso.OpenTextFile("d:\\testfile.txt", 8);//zhuijia,add
+
+
+		
+   			// 写一行，并且带有新行字符。
+   			tf1.WriteLine(latlng.lng()) ;
+			tf1.WriteLine(latlng.lat());
+   			// 向文件写三个新行字符。  
+   			//tf1.WriteBlankLines(1) ;
+   			// 写一行。
+   			//tf1.Write ("This is a test.");
+   			tf1.Close();
+        	});
+
+
+	}
+    }
+	
+    //]]>
+    </script>
+  </head>
+  <!--加载时调用load()函数加载地图，注意加上onunload="GUnload()"防止内存泄露-->
+  <body onload="load()" onunload="GUnload()">
+    <!--以下id为map的DIV元素即为Google地图的容器-->
+    <div id="map_canvas" style="width: 500px; height: 500px"></div>
+  </body>
+</html>
